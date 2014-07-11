@@ -1,0 +1,5 @@
+h1 Story Listing
+
+= each story in controller
+  h2= story.name
+  | {{{story.body}}} 
