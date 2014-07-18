@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+require 'pry'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -18,6 +19,9 @@ gem 'ember-rails'
 gem 'ember-source'
 gem 'emblem-rails'
 gem 'haml-rails'
+
+gem 'faye-rails'
+gem 'thin'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

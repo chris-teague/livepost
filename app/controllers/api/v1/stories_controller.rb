@@ -5,6 +5,10 @@ class Api::V1::StoriesController < ApplicationController
     respond_with Story.all
   end
 
+  def show
+    respond_with Story.find(params[:id])
+  end
+
   private
 
   def story_params

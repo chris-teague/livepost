@@ -4,6 +4,7 @@
     %title Launch Bay
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
+    %script{:type => "text/javascript", :src => "/faye.js" }
     = csrf_meta_tags
   %body
     = yield
