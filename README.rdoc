@@ -1,8 +1,8 @@
 == README
 
-rake db:create
-rake db:migrate
-rails g ember:bootstrap
+   rake db:create
+   rake db:migrate
+   rails g ember:bootstrap
 
 open brower & visit localhost:3000/#stories
 
@@ -10,6 +10,5 @@ Update a story on command line to see live updates in browser.
 
 ie:
 
-rails s
-
-Story.create(name: 'New Story', body: 'Watch me magically appear!')
+   rails s
+   Story.create(name: 'New Story', body: 'Watch me magically appear!')
