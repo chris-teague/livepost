@@ -1,5 +1,9 @@
 h1 Story Listing
 
+h3 Test
+
 = each story in controller
   h2= story.name
-  | {{{story.body}}} 
+  | {{{story.body}}}
+  = each comment in story.comments
+    h2= comment.comment

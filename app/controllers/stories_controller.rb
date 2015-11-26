@@ -1,4 +1,4 @@
-class Api::V1::StoriesController < ApplicationController
+class StoriesController < ApplicationController
   respond_to :json
 
   def index

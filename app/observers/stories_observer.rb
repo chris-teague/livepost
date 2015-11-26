@@ -26,7 +26,6 @@ module Subscriber
     @pg.consume_input
 
     while notification = @pg.notifies
-      puts '#YOLO'
       if notification[:relname] =~ /_insert$/
         @faye.publish('/stories', type: 'created', data: notification[:extra])
       elsif notification[:relname] =~ /_update$/
