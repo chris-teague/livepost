@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rake db:create
+rake db:migrate
+rails g ember:bootstrap
 
-Things you may want to cover:
+open brower & visit localhost:3000/#stories
 
-* Ruby version
+Update a story on command line to see live updates in browser.
 
-* System dependencies
+ie:
 
-* Configuration
+rails s
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Story.create(name: 'New Story', body: 'Watch me magically appear!')
